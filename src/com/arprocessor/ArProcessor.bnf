@@ -1,0 +1,20 @@
+{
+  parserClass="com.arprocessor.parser.ArProcessorParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="ArProcessor"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.arprocessor.psi"
+  psiImplPackage="com.arprocessor.psi.impl"
+
+  elementTypeHolderClass="com.arprocessor.psi.ArProcessorTypes"
+  elementTypeClass="com.arprocessor.psi.ArProcessorElementType"
+  tokenTypeClass="com.arprocessor.psi.ArProcessorTokenType"
+}
+
+ArProcessorFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY
