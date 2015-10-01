@@ -27,6 +27,7 @@
   <extensions defaultExtensionNs="com.intellij">
     <fileTypeFactory implementation="com.arprocessor.ArProcessorFileTypeFactory"/>
     <lang.parserDefinition language="ArProcessorLanguage" implementationClass="com.arprocessor.ArProcessorParserDefinition"/>
+    <lang.syntaxHighlighterFactory key="ArProcessor" implementationClass="com.arprocessor.ArProcessorSyntaxHighlighterFactory"/>
   </extensions>
 
   <application-components>
