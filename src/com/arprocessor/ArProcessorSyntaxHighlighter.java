@@ -14,7 +14,7 @@ import static com.intellij.openapi.editor.colors.TextAttributesKey.createTextAtt
  */
 public class ArProcessorSyntaxHighlighter extends SyntaxHighlighterBase {
     public static final TextAttributesKey KEY = createTextAttributesKey("AR_KEY", DefaultLanguageHighlighterColors.KEYWORD);
-    public static final TextAttributesKey VALUE = createTextAttributesKey("AR_KEY", DefaultLanguageHighlighterColors.STRING);
+    public static final TextAttributesKey VALUE = createTextAttributesKey("AR_VALUE", DefaultLanguageHighlighterColors.STRING);
 
     public static final  TextAttributesKey[] KEY_KEYS = new TextAttributesKey[]{KEY};
     public static final  TextAttributesKey[] VALUE_KEYS = new TextAttributesKey[]{VALUE};
