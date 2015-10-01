@@ -8,11 +8,11 @@ import com.intellij.psi.tree.IElementType;
  */
 public class ArProcessorTokenType extends IElementType {
     public ArProcessorTokenType(String debugName) {
-        super("", ArProcessorLanguage.INSTANCE);
+        super(debugName, ArProcessorLanguage.INSTANCE);
     }
 
     @Override
     public String toString() {
-        return "SimpleTokenType" + super.toString();
+        return "ArProcessorToken." + super.toString();
     }
 }
